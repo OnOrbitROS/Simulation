@@ -1,0 +1,4 @@
+<launch>
+  <rosparam command="load" file="$(find orbit_publisher_pkg)/config/orbit_parameters.yaml"/>
+  <node name="orbit_publisher" pkg="orbit_publisher_pkg" type="fix_orbit_publisher_pkg_node" />
+</launch>

@@ -1,0 +1,6 @@
+<launch>
+  <arg name="sattelite" value="orbit_IIS" />
+  <rosparam command="load" file="$(find orbit_publisher_pkg)/config/orbit_parameters.yaml"/>
+  <param name="$(arg sattelite)/publish_rate" type="int" value="10" />
+  <node name="$(arg sattelite)" pkg="orbit_publisher_pkg" type="orbit_publisher_pkg_node" />
+</launch>
