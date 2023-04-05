@@ -1,0 +1,8 @@
+<launch>
+  <!--Utilizamos el espacio de nobre para añadir un prefijo a todos los parametros para poder introducir mas de una orbita.-->
+  <group ns="iss">
+    <rosparam command="load" file="$(find orbit_publisher_pkg)/config/fixed_orbit.yaml"/>
+    <!-- <node name="orbit" pkg="orbit_publisher_pkg" type="fix_orbit_publisher_pkg_node" launch-prefix="xterm -e gdb -(to delete)-args"/> -->
+    <node name="orbit" pkg="orbit_publisher_pkg" type="fix_orbit_publisher_pkg_node" />
+  </group>
+</launch>
