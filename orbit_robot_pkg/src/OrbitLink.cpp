@@ -138,17 +138,4 @@ void OrbitLink::DynamicsCalcTorque()
         //std::cout << "EnviromentalTorque" << std::endl << EnviromentalTorque << std::endl;  
         
         Torque = EnviromentalTorque ;
-       /*  GravityGradiant(0)= 0.0;
-        GravityGradiant(1)= Inertia(2,0);
-        GravityGradiant(2)= 0.0;
-        
-        Torque =  3.0 * (n0 * n0) * GravityGradiant ;   */
-        //std::cout << "Torque" << std::endl << Torque << std::endl; 
-        
-   /*      Torque << 0.0 , 0.006 , 0.0 ;
-    }
-    else
-    {
-        Torque << 0.0 , 0.0 , 0.0 ;
-    }  */
 }
