@@ -1,0 +1,40 @@
+satt_arm_controller:
+  type: effort_controllers/JointTrajectoryController
+  joints:
+    - joint1
+    - joint2
+    - joint3
+    - joint4
+    - joint5
+    - joint6
+
+  constraints:
+    # Esta tolerancia se suma al tiempo establecido para realizar la trayectoria 
+    goal_time: 0.5
+    # Esta es el valor de velocidad que es considerada 0.                    
+    stopped_velocity_tolerance: 0.02 # Override default
+    joint1:
+      trajectory: 0.005               # Not enforced if unspecified
+      goal: 0.002
+    joint2:
+      trajectory: 0.05               # Not enforced if unspecified
+      goal: 0.02
+    joint3:
+      trajectory: 0.05               # Not enforced if unspecified
+      goal: 0.02
+    joint4:
+      trajectory: 0.05               # Not enforced if unspecified
+      goal: 0.02
+    joint5:
+      trajectory: 0.05               # Not enforced if unspecified
+      goal: 0.02
+    joint6:
+      trajectory: 0.05               # Not enforced if unspecified
+      goal: 0.02      
+  gains:
+    joint1: {p: 2000,  d: 100, i: 10, i_clamp: 1}
+    joint2: {p: 2000,  d: 100, i: 10, i_clamp: 1}
+    joint3: {p: 2000,  d: 100, i: 10, i_clamp: 1}
+    joint4: {p: 2000,  d: 100, i: 10, i_clamp: 1}
+    joint5: {p: 2000,  d: 100, i: 10, i_clamp: 1}
+    joint6: {p: 2000,  d: 100, i: 10, i_clamp: 1}

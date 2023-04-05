@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<launch>
+ 
+  <node pkg="axis_by_axis" type="axis_by_axis_node" name="trajectory" /> 
+
+</launch>

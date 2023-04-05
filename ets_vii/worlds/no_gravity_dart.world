@@ -1,0 +1,38 @@
+<?xml version="1.0"?> 
+<sdf version="1.4">
+  <world name="default">
+    <physics type="dart">
+
+    </physics>
+
+    <gravity>0.000000000000000000 0.00000000000000000 0.000000000000000</gravity>
+    <magnetic_field>0.00000000000 0.00000000000 0.000000000000</magnetic_field>
+
+    <include>
+      <uri>model://sun</uri>
+    </include>
+
+    <model name='orbitReference'>
+      <link name="referenceSpaceCraft">
+        <pose>0 0 0 0 0 0</pose>
+        <wind>false</wind>
+        <collision name="lvlh">
+          <geometry>
+            <box>
+              <size>0.001 0.001 0.001</size>
+            </box>  
+          </geometry>
+        </collision>
+        <visual name="lvlh">
+          <geometry>
+            <box>
+              <size>0.1 0.1 0.1</size>
+            </box>  
+            </geometry>
+        </visual>
+      </link>
+    </model>   
+
+
+  </world>
+</sdf>
