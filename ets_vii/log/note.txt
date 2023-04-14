@@ -1,1 +1,1 @@
-**Folder where the data obtained from the rosbag is stored. Delete old files to solve storage space problems.
+**Folder where the data obtained from the rosbag is stored. Delete old files to solve storage problems.
